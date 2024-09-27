@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <script>
+      //Questi sono i parametri di produzione del client.
+      //In ambiente di sviluppo, rimangono validi, salvo l'URL del server che viene sovrascritto da quello riportato nel .env del client.
+      window.appConfig = {
+        serverUrl: "http://172.16.2.20:3000", //Url al quale è raggiungibile il server. Senza slash finale.
+        causaliDoc: { //Servono a filtrare i lookup dei documenti ove richiesto
+          ritiroComodato: ["DTRCM"], //null=qualunque causale, oppure array di stringhe (senza spazi extra)
+          consegnaComodato: ["DTCCM"], //null=qualunque causale, oppure array di stringhe (senza spazi extra)
+          intervento: null, //null=qualunque causale, oppure array di stringhe (senza spazi extra)
+        },
+      };
+    </script>
+    <title>Torrefazione</title>
+  </head>
+  <body class="dx-viewport">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+@import "Variables";
+
+.my-grid {
+  border: none !important;
+
+  .dx-filterbuilder-overlay .dx-scrollable-container {
+    max-height: 400px;
+  }
+  .dx-datagrid-text-content {
+    font-weight: bold;
+    color: black;
+    font-size: 12px;
+    font-family: $baseFont;
+  }
+  .dx-row {
+    border-width: 0px;
+    border-bottom-width: 1px;
+  }
+  .dx-column-lines {
+    border-width: 0px;
+    border-bottom-width: 1px;
+  }
+  .dx-visibility-change-handler {
+    font-size: 12px !important;
+  }
+  .dx-datagrid .dx-column-lines > td {
+    border-width: 0px !important;
+    border-bottom: 1px solid $grigio !important;
+  }
+  .dx-texteditor-input {
+    border-width: 0px !important;
+    border-bottom-width: 1px !important;
+  }
+}
+
+.my-dettail-grid {
+  border: none !important;
+  td[role="gridcell"]{
+    vertical-align: middle !important;
+  }
+  .dx-filterbuilder-overlay .dx-scrollable-container {
+    max-height: 400px;
+  }
+  .dx-datagrid-text-content {
+    color: $azzurro;
+    font-size: 12px;
+    font-family: $baseFont;
+  }
+  .dx-row {
+    border-width: 0px;
+    border-bottom-width: 1px;
+  }
+  .dx-column-lines {
+    border-width: 0px;
+    border-bottom-width: 1px;
+  }
+  .dx-visibility-change-handler {
+    font-size: 12px !important;
+  }
+  .dx-datagrid .dx-column-lines > td {
+    border-width: 0px !important;
+    border-bottom: 1px solid $grigio !important;
+  }
+  .dx-texteditor-input {
+    border-width: 0px !important;
+    border-bottom-width: 1px !important;
+  }
+}

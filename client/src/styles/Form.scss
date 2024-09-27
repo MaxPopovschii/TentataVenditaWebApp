@@ -1,0 +1,125 @@
+@import "Variables";
+
+[selectionmade] {
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[role="gridcell"] {
+  .field-container {
+    .value {
+      .value-row {
+        flex-wrap: wrap;
+        row-gap: 5px;
+        .row-break {
+          display: block;
+        }
+        .value-description {
+          margin-left: 0;
+          border-bottom: none;
+        }
+        .value-extended-description {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.field-container {
+  width: 100%;
+  display: flex;
+  margin: 5px;
+  align-items: baseline;
+  font-size: 12px;
+  .label {
+    margin-right: 20px;
+    width: 150px;
+    font-weight: 300;
+  }
+  .value {
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+    .value-row {
+      width: 100%;
+      display: flex;
+      align-items: baseline;
+    }
+    .row-break {
+      width: 100%;
+      display: none;
+    }
+    .input {
+      width: 150px;
+      font-weight: 600;
+      input {
+        font-weight: 600;
+        width: 100%;
+      }
+    }
+    .input-tools {
+    }
+    .input-description {
+    }
+    .value-description,
+    .value-extended-description {
+      flex: 1;
+      font-weight: 600;
+      border-bottom: 1px dotted black;
+      margin-right: 15px;
+    }
+    .value-description {
+      margin-left: 15px;
+    }
+    .dx-overlay-content {
+      display: none;
+    }
+  }
+}
+
+.autocomplete-item {
+  .id {
+    font-weight: bold;
+    width: 200px;
+  }
+  .description {
+    font-weight: normal;
+    flex: 1;
+    text-align: right;
+    margin-left: 10px;
+    white-space: nowrap;
+  }
+
+  display: flex;
+}
+
+.dx-autocomplete {
+  width: 150px !important;
+}
+
+.autocomplete-not-found {
+  color: $red;
+}
+.field-container:has(input:focus) .autocomplete-not-found {
+  display: none;
+}
+
+.stellina-obbligatorio {
+  color: #d51414;
+  font-weight: bold;
+}
+
+.dx-datagrid-content
+  .dx-datagrid-table
+  .dx-row:not(.dx-datagrid-filter-row)
+  .dx-editor-cell
+  .dx-texteditor {
+  background: #fff;
+  border: 1px solid #ddd !important;
+  border-radius: 4px !important;
+}
