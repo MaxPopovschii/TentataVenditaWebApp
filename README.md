@@ -2,8 +2,6 @@
 
 ## Contatti
 
-Trickyleaf: `company@trickyleaf.com`
-
 Rilasciato il 15 gennaio 2024.
 
 ## Stack tecnologico
